@@ -1,0 +1,24 @@
+server:
+  port: 8081
+spring:
+  jmx:
+    default-domain: xnkj-backstage
+  profiles:
+    active: service-base
+#配置返回jsp start
+# 配置jsp文件的位置，默认位置为：src/main/webapp
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      # 配置jsp文件的后缀
+      suffix: .jsp
+  thymeleaf:
+    cache: false
+    enabled: false
+#配置返回jsp end
+
+#日志配置开始
+logging:
+  file: xnkj/backstage-logs/backstage-logs.log
+  config: classpath:backstage-log.xml
+#日志配置结束

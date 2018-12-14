@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  jmx:
+    default-domain: xnkj-app
+  profiles:
+    active: service-base
+  jackson:
+    time-zone: GMT+8
+
+#swagger 配置开始
+swagger:
+  enabled: true
+  title: "手机端-API"
+  base-package: com.liaoin
+#swagger 配置结束
+
+#日志配置开始
+logging:
+  file: xnkj/app-logs/app-logs.log
+  config: classpath:app-log.xml
+#日志配置结束

@@ -1,0 +1,9 @@
+SELECT * FROM `t_user` where phone = "15320575162";
+SELECT * FROM `t_withdraw` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_revenue_record` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_order` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_income_detail` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_extension_record` where user_id = "2c9a21936727600a01672763c3db0001" or recommend_user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_calculation_force` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_bank_card` where user_id = "2c9a21936727600a01672763c3db0001";
+SELECT * FROM `t_authentication` where user_id = "2c9a21936727600a01672763c3db0001";
